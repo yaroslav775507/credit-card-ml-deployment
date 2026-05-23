@@ -65,7 +65,7 @@ credit-card-ml-deployment/
 ### 1. Клонирование и настройка окружения
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-card-ml-deployment.git
+git clone https://github.com/yaroslav775507/credit-card-ml-deployment.git
 cd credit-card-ml-deployment
 
 python -m venv venv
@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ### 2. (Опционально) Добавьте реальный датасет
 
 Скачайте [UCI_Credit_Card.csv](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)
-и поместите файл в `data/UCI_Credit_Card.csv`. Без него автоматически используются синтетические данные.
+и поместите файл в `data/UCI_Credit_Card.csv`.
 
 ### 3. Обучение моделей
 
@@ -237,8 +237,8 @@ curl http://localhost:5000/models
 {
   "available_versions": ["v1", "v2"],
   "metadata": {
-    "v1": {"algorithm": "LogisticRegression",          "f1_score": 0.39},
-    "v2": {"algorithm": "GradientBoostingClassifier",  "f1_score": 0.05}
+    "v1": {"algorithm": "LogisticRegression",         "f1_score": 0.4613},
+    "v2": {"algorithm": "GradientBoostingClassifier", "f1_score": 0.4688}
   },
   "ab_split_v2": 0.5
 }
